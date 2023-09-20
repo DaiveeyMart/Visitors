@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Daiveey Mart - Visitors Page</title>
+        <style>
+            .center{
+                display: block;
+                margin: 0 auto;
+                justify-content: center;
+                margin-top: 2%;
+            }
+
+            .keys{
+                position: relative;
+                display: block;
+                justify-content: center;
+                text-align: center;
+                margin: 0 auto;
+                margin-top: 12px;
+                border-color: green;
+                border-radius: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 40px;
+                font-style: italic;
+                background-color: #d1f089;
+                width: 550px;
+                height: 90px;
+                padding: 15px 15px;
+                transition: ease all 0.5ms;
+            }
+
+            .keys:hover{
+                color: grey;
+                background-color: yellow;
+                scale: 95%;
+            }
+
+            label span{
+                color: rgb(255, 255, 255);
+                font-style: oblique;
+                
+            }
+
+            .footer{
+                margin: 0 auto;
+                bottom: 0px;
+                position: fixed;
+            }
+
+            .footer::selection{
+                background: lightgreen;
+                color: black;
+            }
+
+            .keys::selection{
+                background: lightgreen;
+                color: black;
+            }
+
+            img::selection{
+                background: lightgreen;
+                color: black;
+            }
+        </style>
+    </head>
+    <body style="background-image: url('images/background.png');">
+        <img src="images/Stamp-Logo.png" alt="background image" width=200 height=200 class="center">
+    
+        <button type="button" class="keys" name="MapLink" onclick="window.location.href='https://goo.gl/maps/e4xhH79mFVv1PGLe6';" target="_blank">GET STORE LOCATION</button>
+        <button type="button" class="keys" name="WebsiteLink" onclick="window.location.href='#';" target="_blank" disabled>SHOP ONLINE</button>
+        <button type="button" class="keys" name="PaymentLink" onclick="window.location.href='#';" target="_blank" disabled>PAYMENT</button>
+        
+        <label class="footer">Powered By <span class="footer"> Daiveey Solutions & Management System</span></label>
+    </body>
+</html>
